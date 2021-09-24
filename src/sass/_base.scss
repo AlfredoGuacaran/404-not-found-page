@@ -1,0 +1,29 @@
+// colors
+$color-gray-light--1: #ffffff;
+$color-gray-light--2: #bdbdbd;
+$color-gray-dark--1: #333333;
+$color-gray-dark--2: #4f4f4f;
+
+//breakpoints
+$bp-medim: 56.25em; // 900px/16px
+$bp-small: 43.75em; // 700px/16px
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-medim) {
+    font-size: 50%;
+  }
+}
